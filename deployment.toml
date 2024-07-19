@@ -1,0 +1,10 @@
+[[cells]]
+name = "ssri-test"
+enable_type_id = false
+location = { file = "build/release/ssri-test" }
+
+# The lock script set to output cells
+[lock]
+code_hash = "0x9bd7e06f3ecf4be0f2fcd2188b23f1b9fcc88e5d4b65a8637b17723bbda3cce8"
+args = "0xdc7a30c57e8bef48b1f3d26fb0aac10cd65edf30"
+hash_type = "type"
