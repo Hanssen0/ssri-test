@@ -8,12 +8,13 @@ pub enum Error {
     ItemMissing,
     LengthNotEnough,
     Encoding,
-    Overflow,
     SpawnExceededMaxContentLength,
     SpawnWrongMemoryLimit,
     SpawnExceededMaxPeakMemory,
 
     InvalidVmVersion,
+    InvalidMethodPath,
+    InvalidMethodArgs,
 }
 
 impl From<SysError> for Error {

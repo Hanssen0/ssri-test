@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
 
-members = [
+members = [ "ckb-ssri", "ckb-ssri-proc-macro",
   # Please don't remove the following line, we use it to automatically
   # detect insertion point for newly generated crates.
   # @@INSERTION_POINT@@

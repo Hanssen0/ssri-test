@@ -123,7 +123,7 @@ dependencies = [
  "ckb-crypto",
  "ckb-dao-utils",
  "ckb-error",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-jsonrpc-types",
  "ckb-pow",
  "ckb-rational",
@@ -242,7 +242,7 @@ dependencies = [
  "cfg-if",
  "ckb-error",
  "ckb-fixed-hash",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-occupied-capacity",
  "molecule",
  "numext-fixed-uint",
@@ -253,6 +253,16 @@ name = "ckb-hash"
 version = "0.112.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "25af660fc8746f7c756444e6aa47ede9a874206563b6a1ce1b230a5b86519392"
+dependencies = [
+ "blake2b-ref",
+ "blake2b-rs",
+]
+
+[[package]]
+name = "ckb-hash"
+version = "0.116.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d5754bc49cf76a7e8829fe6a7cf1eea1284cbca9777b521f072c76d6ae28d303"
 dependencies = [
  "blake2b-ref",
  "blake2b-rs",
@@ -337,7 +347,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5895b4799fbb7e537ef0a778493b8f8678284c2bb20b476edce3f3375d1c4aa1"
 dependencies = [
  "byteorder",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-types",
  "eaglesong",
  "log",
@@ -378,13 +388,27 @@ dependencies = [
  "byteorder",
  "ckb-chain-spec",
  "ckb-error",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-logger",
  "ckb-traits",
  "ckb-types",
  "ckb-vm",
  "faster-hex",
  "serde",
+]
+
+[[package]]
+name = "ckb-ssri"
+version = "0.1.0"
+
+[[package]]
+name = "ckb-ssri-proc-macro"
+version = "0.1.0"
+dependencies = [
+ "ckb-hash 0.116.1",
+ "ckb-ssri",
+ "quote",
+ "syn 2.0.71",
 ]
 
 [[package]]
@@ -428,7 +452,7 @@ dependencies = [
  "ckb-chain-spec",
  "ckb-crypto",
  "ckb-error",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-jsonrpc-types",
  "ckb-mock-tx-types",
  "ckb-resource",
@@ -462,7 +486,7 @@ dependencies = [
  "ckb-error",
  "ckb-fixed-hash",
  "ckb-gen-types",
- "ckb-hash",
+ "ckb-hash 0.112.1",
  "ckb-merkle-mountain-range",
  "ckb-occupied-capacity",
  "ckb-rational",
@@ -1189,6 +1213,8 @@ checksum = "3c5e1a9a646d36c3599cd173a41282daf47c44583ad367b8e6837255952e5c67"
 name = "ssri-test"
 version = "0.1.0"
 dependencies = [
+ "ckb-ssri",
+ "ckb-ssri-proc-macro",
  "ckb-std",
 ]
 

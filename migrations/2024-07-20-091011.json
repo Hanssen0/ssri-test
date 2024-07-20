@@ -1,0 +1,13 @@
+{
+  "cell_recipes": [
+    {
+      "name": "ssri-test",
+      "tx_hash": "0x900afcf79235e88f7bdf8a5d320365b7912f8074f4489a68405f43586fc51e5c",
+      "index": 0,
+      "occupied_capacity": 3338900000000,
+      "data_hash": "0x5f1cbfc5a22eab8de297cb8d6ea1489f9b281080ff5407fe94e4acebedb02ed6",
+      "type_id": null
+    }
+  ],
+  "dep_group_recipes": []
+}

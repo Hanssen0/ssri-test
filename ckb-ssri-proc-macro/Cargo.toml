@@ -1,0 +1,13 @@
+[package]
+name = "ckb-ssri-proc-macro"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+ckb-hash = "0.116.1"
+quote = "1.0"
+syn = { version = "2.0", features = ["full"] }
+ckb-ssri = { path = "../ckb-ssri" }
